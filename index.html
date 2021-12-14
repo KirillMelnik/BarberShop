@@ -37,7 +37,7 @@
                 </ul>
             </nav>
            <a class="tel-link" href="tel:+380441111111">+38 044 111 11 11</a>
-           <button class="modal-btn" type="button">онлайн-запись</button>
+           <a href="#modal-btn1" class="modal-btn" type="button" data-modal-open>онлайн-запись</a>
         </div>
     </header>
 
@@ -94,8 +94,7 @@
                         то уже никогда не сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной волне". Поэтому, мы всегда
                         готовы усовершенствовать каждого, кто к нам приходит!
                     </p>
-                    
-                    <button class="modal-btn modal-btn-about" type="button">онлайн-запись</button>
+                    <a href="#modal-btn1" class="modal-btn modal-btn-about" type="button">онлайн-запись</a>
                 </div>
             </div>
                 
@@ -148,7 +147,8 @@
                         </li>
                     </ul>
                 </div>
-                <button class="modal-btn modal-btn-services" type="button">онлайн-запись</button>
+                <!-- <button class="modal-btn modal-btn-services" type="button">онлайн-запись</button> -->
+                <a href="#modal-btn1" class="modal-btn modal-btn-services" type="button">онлайн-запись</a>
             </div>
         </section>
 
@@ -346,12 +346,12 @@
             <div class="container contact-data-container">
                 <section class="feedback section">
                     <div class="form-thumb">
-                        <h2 class="title feedback-title">Онлайн-запись</h2>
+                        <h2 id="modal-btn1" class="title feedback-title">Онлайн-запись</h2>
                         <form class="form-registration">
-                            <input class="form-registration-input user-name" type="text" name="user-name" minlength="2" placeholder="Имя*" required>
-                            <input class="form-registration-input phone" type="tel" name="user-tel" placeholder="Телефон*" required>
+                            <input class="form-registration-input user-name js-user-name" type="text" name="user-name" minlength="2" placeholder="Имя*" required>
+                            <input class="form-registration-input phone js-user-phone" type="tel" name="user-tel" placeholder="Телефон*" required>
                             <textarea class="user-comment" name="user-comment" id="comment" placeholder="Сообщение"></textarea>
-                            <button class="modal-btn" type="submit">отправить</button>
+                            <button class="modal-btn js-modal-btn" type="submit">отправить</button>
                         </form>
                     </div>
                 </section>
@@ -363,7 +363,7 @@
                         <address class="contacts-info">
                             <ul class="contacts-list"> 
                                 <li class="contacts-list-item">
-                                    <a class="contacts-link" href="https://goo.gl/maps/hEZyoL5gDTZSrCwH7" target="_blank"
+                                    <a class="contacts-link" href="https://goo.gl/maps/vNiJdiwejiZv4m6Q6" target="_blank"
                                         rel="noopener noreferrer">
                                         <svg class="contacts-icon-map contacts-icon">
                                             <use href="./images/icons/symbol-defs.svg#icon-map-pin"></use>
@@ -411,5 +411,7 @@
 
         </div>
     </footer>
+
+    <script src="./js/modal.js" type="module"></script>
 </body>
 </html>
